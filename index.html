@@ -410,7 +410,7 @@
         if (input != "") {
           let showCard = document.getElementById("show-card").style.display = "block"
 
-          fetch(`http://api.weatherapi.com/v1/current.json?key=444284d2e1974528841140836252606&q=${input}&aqi=no`)
+          fetch(`https://api.weatherapi.com/v1/current.json?key=444284d2e1974528841140836252606&q=${input}&aqi=no`)
             .then((req) => req.json())
             .then((res) => {
               let place = document.getElementById("place").innerText = `${res.location.name}, ${res.location.region}`
